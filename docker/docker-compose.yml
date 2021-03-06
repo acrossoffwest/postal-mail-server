@@ -27,7 +27,6 @@ services:
     volumes:
       - ./logs/postal:/logs
     environment:
-      - VIRTUAL_HOST=${DOMAIN}
       - ZABBIX_HOSTNAME=postal-app
 
       - DB_HOST=postal-db
