@@ -13,7 +13,7 @@ services:
       - LETSENCRYPT_HOST=${DOMAIN}
 
   postal-app:
-    image: tiredofit/postal
+    image: tiredofit/postal:3.0.2
     container_name: postal-app
     ports:
       - "25:25"
